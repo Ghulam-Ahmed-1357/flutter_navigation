@@ -30,11 +30,11 @@ class DashboardScreen extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return GestureDetector(
                     onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => SecondScreen(product: myProductList[index],)));
-                      // AppNavigator.pushNamedWithData(
-                      //     context,
-                      //     RouteName.secondScreen,
-                      //     myProductList[index]);
+                      // Navigator.push(context, MaterialPageRoute(builder: (context) => SecondScreen(product: myProductList[index],)));
+                      AppNavigator.pushNamedWithData(
+                          context,
+                          RouteName.secondScreen,
+                          myProductList[index]);
                     },
                     child: Center(
                       child: Padding(
@@ -58,9 +58,3 @@ class DashboardScreen extends StatelessWidget {
     );
   }
 }
-git init
-git add .
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Ghulam-Ahmed-1357/flutter_navigation.git
-git push -u origin main

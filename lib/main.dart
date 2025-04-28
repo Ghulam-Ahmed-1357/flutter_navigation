@@ -6,6 +6,8 @@ import 'package:untitled/route_name/routeName.dart';
 import 'package:untitled/signup.dart';
 import 'package:untitled/view.dart';
 
+import 'app_pages/appPages.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -18,10 +20,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      // initialRoute: RouteName.dashboard,
-      // routes: AppPages.getRoutes(),
+      initialRoute: RouteName.firstScreen,
+      routes: AppPages.getRoutes(),
 
-       home: DashboardScreen(),
+       // home: DashboardScreen(),
     );
   }
 }

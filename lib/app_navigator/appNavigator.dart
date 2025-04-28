@@ -12,8 +12,8 @@ class AppNavigator{
     Navigator.pushNamed(context, page);
   }
 
-  static pushNamedWithData(BuildContext context, String page, Product? data){
-    Navigator.pushNamed(context, page);
+  static pushNamedWithData(BuildContext context, String page, Product product){
+    Navigator.pushNamed(context, page, arguments: product);
   }
 
   static pushNamedReplace(BuildContext context, String page){
